@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Mon premier est une note de musique, ma seconde est absente, mon tout est un demi-raaaaaaaaaaat 🐀🐀🐀></!-->
+    <meta charset="UTF-8" />
+    <!-- Primary Meta Tags -->
+    <title>Le Gros Poulet</title>
+    <meta name="title" content="Le Gros Poulet" />
+    <meta name="description" content="Un jeu familial et convivial pour petits et grands 🐔" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://legrospoulet.000webhostapp.com/" />
+    <meta property="og:title" content="Le Gros Poulet" />
+    <meta property="og:description" content="Un jeu familial et convivial pour petits et grands 🐔" />
+    <meta property="og:image" content="https://legrospoulet.000webhostapp.com/gropoulet.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://legrospoulet.000webhostapp.com/" />
+    <meta property="twitter:title" content="Le Gros Poulet" />
+    <meta property="twitter:description" content="Un jeu familial et convivial pour petits et grands 🐔" />
+    <meta property="twitter:image" content="https://legrospoulet.000webhostapp.com/gropoulet.png" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gropoulet.ico" type="image/x-icon"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Le Gros Poulet</h1>
+        <div class="sum" id="sum">Somme des dés : </div>
+        <div id="diceContainer">
+            <div class="dice_container_One">
+                <div class="dice diceGrid dice_one_f1">
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_one_f2">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_one_f3">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_one_f4">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_one_f5">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_one_f6">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+            </div>
+
+            <div class="dice_container_Two">
+
+                <div class="dice diceGrid dice_two_f1">
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_two_f2">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_two_f3">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_two_f4">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_two_f5">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+                <div class="dice diceGrid dice_two_f6">
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                    <p class ="dot"></p>
+                </div>
+            </div>
+        </div>
+        <!-- On peut cliquer partout, le bouton c'est juste pour les cons></!-->
+        <button id="rollButton">Lancer les dés</button>
+        <div id="notification"></div>
+        <div id="popup">
+            <a id="closeBtn" href="#"></a>
+            <img src="https://legrospoulet.000webhostapp.com/gropoulet.png">
+            <h1>Règles du Gros Poulet</h1>
+            <h2>Le Gros Poulet est un jeux qui se joue à l'aide de 2 dès. En fonction de la combinaison, on picole plus ou moins...</h2>
+            <hr>
+            
+            <h3>Si un des 2 dès vaut 1:</h3>
+            <p>Le joueur boit le nombre de gorgés affichées sur l'autre dès.</p>
+            <h3>Si un des 2 dès vaut 3:</h3>
+            <p>Le gros poulet boit le nombre de gorgés affichées sur l'autre dès.</p>
+            <h3>Si un des 2 dès vaut 4:</h3>
+            <p>Le joueur distribue un chi-fu-mi (pierre-feuille-ciseaux) pour le nombre de gorgés de l'autre dès.</p>
+            
+            <h3>Si la somme des dès vaut 3:</h3>
+            <p>Le joueur est désigné comme Gros Poulet!!! Félicitation à lui, sa soirée vient de commencer!</p>
+            <h3>Si la somme des dès vaut 7:</h3>
+            <p>Biskit! Tout le monde met sa main sur son front en beuglant le mot magique: "biskiiiiiiiiiiit!!!" le dernier s'envoie une gorgée.</p>
+            <h3>Si la somme des dès vaut 9:</h3>
+            <p>Le joueur précédent s'en envoie une.</p>
+            <h3>Si la somme des dès vaut 10:</h3>
+            <p>Le joueur s'en tombe une.</p>
+            <h3>Si la somme des dès vaut 11:</h3>
+            <p>Le joueur d'après s'en descend une.</p>
+
+            <h3>Si on tombe sur un double, on boit une gorgée et on rejoue. ATTENTION! Au bout de 3 doubles consécutifs, c'est le cul sec!</h3>
+            
+            <h3>Si c'est double 1:</h3>
+            <p>Le joueur s'envoie 2 fois 1 gorgée plus 1 petite pour la route!</p>
+            <h3>Si c'est double 3:</h3>
+            <p>Le gros poulet s'en envoie 6!</p>
+            <h3>Si c'est double 4:</h3>
+            <p>On distribue 2 chi-fu-mi pour 4 gorgées chacuns.</p>
+            <h3>Si c'est double 6:</h3>
+            <p>ON INVENTE UNE NOUVELLE RÈGLE!!!.</p>
+            
+            <h2>TOUTES CES RÈGLES SONT BIEN ÉVIDEMMENT CUMULATIVE, PERMETTANT AINSI AU(X) JOUEUR(S) DE PASSER UN MOMENT DES PLUS AGRÉABLE!</h2>
+            <p></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+        div[style*="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+            display: none !important;
+        }
+        
+        img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+            display: none !important;
+        }
+        
+        a[href*="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+            display: none !important;
+        }
+    </style>
+
+</body>
+</html>
