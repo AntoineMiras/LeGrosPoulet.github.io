@@ -116,3 +116,44 @@ function diceAction(dice_number){
 // Attacher la fonction de lancement des dés au bouton
 var rollButton = document.getElementById("rollButton");
 rollButton.addEventListener("click", lancerLesDes);
+
+
+// Aide
+var helpNumber = 0
+
+const helpContainer = document.getElementById("helpPopup")
+const Tinted = document.getElementById("tint")
+function helpCls() {
+    helpContainer.classList.remove("Visible")
+    Tinted.classList.remove("Visible")
+}
+
+function helpOpn() {
+    helpContainer.classList.add("Visible")
+    Tinted.classList.add("Visible")
+    helpNumber += 1
+    console.log(helpNumber)
+    if (helpNumber === 3) {
+        sleep(1000).then(() => {
+            window.alert("Bon, faudrait commencer à retenir les règles là...")
+        })
+    } if (helpNumber === 4) {
+        sleep(1000).then(() => {
+            window.alert("T'es cui-cuit? T'arrives plus à imprimer?")        
+        })
+    } if (helpNumber > 4) {
+        sleep(1000).then(() => {
+            window.alert("Allez, ça saoule, bouffe ton cul-sec!")
+        })
+    }
+}
+
+//const hlpBtn = document.getElementById("hlpCls")
+//hlpBtn.onClick = helpCls
+
+//utils
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
