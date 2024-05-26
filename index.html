@@ -29,6 +29,7 @@
 </head>
 <body>
     <div class="container">
+        <div id="tint"></div>
         <h1>Le Gros Poulet</h1>
         <div class="sum" id="sum">Somme des dés : </div>
         <div id="diceContainer">
@@ -108,6 +109,48 @@
         <!-- On peut cliquer partout, le bouton c'est juste pour les cons></!-->
         <button id="rollButton">Lancer les dés</button>
         <div id="notification"></div>
+        <button id=hlpBtn onclick="helpOpn()">?</button>
+        <div id="helpPopup">
+            <button id="hlpCls" onclick="helpCls()">✕</button>
+            <img src="https://legrospoulet.000webhostapp.com/gropoulet.png">
+            <h1>Règles du Gros Poulet</h1>
+            <h2>Le Gros Poulet est un jeux qui se joue à l'aide de 2 dés . En fonction de la combinaison, on picole plus ou moins ... <br> Préparez vos plus beaux couvre chefs, vous pourriez en avoir besoin !</h2>
+            <hr>
+            
+            <h3>Si un des 2 dés vaut 1 :</h3>
+            <p>Le joueur boit le nombre de gorgées affichées sur l'autre dés .</p>
+            <h3>Si un des 2 dés vaut 3 :</h3>
+            <p>Le gros poulet boit le nombre de gorgées affichées sur l'autre dés .</p>
+            <h3>Si un des 2 dés vaut 4 :</h3>
+            <p>Le joueur distribue un chi-fu-mi (pierre-feuille-ciseaux) pour le nombre de gorgées de l'autre dés .</p>
+            
+            <h3>Si la somme des dés vaut 3 :</h3>
+            <p>Le joueur est désigné comme Gros Poulet !!! Félicitation à lui, sa soirée vient de commencer ! Enfile ton meilleur chapeau et prépare toi à la lutte !</p>
+            <h3>Si la somme des dés vaut 7 :</h3>
+            <p>Biskit! Tout le monde met sa main sur son front en beuglant le mot magique : "biskiiiiiiiiiiit !!!" le dernier s'envoie une gorgée .</p>
+            <h3>Si la somme des dés vaut 9 :</h3>
+            <p>Le joueur précédent s'en envoie une </p>
+            <h3>Si la somme des dés vaut 10 :</h3>
+            <p>Le joueur s'en tombe une .</p>
+            <h3>Si la somme des dés vaut 11 :</h3>
+            <p>Le joueur d'après s'en descend une .</p>
+
+            <h3>Si on tombe sur un double, on boit une gorgée et on rejoue . ATTENTION ! Au bout de 3 doubles consécutifs, c'est le cul sec !</h3>
+            
+            <h3>Si c'est double 1 :</h3>
+            <p>Le joueur s'envoie 2 fois 1 gorgée plus 1 petite pour la route !</p>
+            <h3>Si c'est double 3 :</h3>
+            <p>Le gros poulet s'en envoie 6 !</p>
+            <h3>Si c'est double 4 :</h3>
+            <p>On distribue 2 chi-fu-mi pour 4 gorgées chacuns .</p>
+            <h3>Si c'est double 6 :</h3>
+            <p>ON INVENTE UNE NOUVELLE RÈGLE !!!</p>
+            
+            <h2>TOUTES CES RÈGLES SONT BIEN ÉVIDEMMENT CUMULATIVE, PERMETTANT AINSI AU(X) JOUEUR(S) DE PASSER UN MOMENT DES PLUS AGRÉABLE !</h2>
+            <p style="color: lightslategray; font-style: italic">L'abus de santé est dangereux pour l'alcool, à modérer sans consommation .</p>
+            <div class="spacer" style="height: 50px;"></div>
+            <p></p>
+        </div>
     </div>
     <script src="script.js"></script>
     <style>
